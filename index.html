@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="field">
+            <input type="text" min="6" max="32" steps="1" value="" name="password" id="password">
+            <button class="copy"><svg width="41" height="51" viewBox="0 0 41 51" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M30.3147 0.830811H13.6332C11.1514 0.830811 9.13318 2.85131 9.13318 5.33081V36.8308C9.13318 39.3126 11.1514 41.3308 13.6332 41.3308H36.1332C38.6149 41.3308 40.6332 39.3126 40.6332 36.8308V11.1493L30.3147 0.830811ZM36.1354 36.8308H13.6332V5.33081H27.1332V14.3308H36.1332L36.1354 36.8308Z"
+                        fill="#7DA9AE" />
+                    <path
+                        d="M4.63318 9.83081H0.133179V45.8308C0.133179 48.3126 2.15143 50.3308 4.63318 50.3308H31.6332V45.8308H4.63318V9.83081Z"
+                        fill="#7DA9AE" />
+                </svg>
+                <span>copied</span>
+            </button>
+        </div>
+        <div class="field">
+            <input type="range" value="12" min="6" max="32" name="length" id="length">
+            <span id="lengthText">12</span> 
+        </div>
+        <div class="field">
+            <input type="checkbox" value="true" id="symbols" name="symbols" checked>
+            <label for="symbols"> <strong>Include Symbols</strong> (@#$%)</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" value="true" id="numbers" name="numbers" checked>
+            <label for="numbers"> <strong>Include Numbers</strong> (1234)</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" value="true" id="lowercase" name="lowercase" checked>
+            <label for="lowercase"> <strong>Include Lowercase Characters</strong> (abcd)</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" value="true" id="uppercase" name="uppercase" checked>
+            <label for="uppercase"> <strong>Include Uppercase Characters</strong> (ABCD)</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" value="true" id="similar" name="similar" checked>
+            <label for="similar"> <strong>Include Similar Characters</strong> (i, l, 1, L, o, 0, O)</label>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
